@@ -84,10 +84,3 @@ To deploy your own version, follow these steps:
 
 ## Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
----
-
-Feel free to modify any section as per your requirement. Also, don't forget to replace the placeholder URL with your actual GitHub repository link and add screenshots in the designated section.
