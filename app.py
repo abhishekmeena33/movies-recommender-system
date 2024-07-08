@@ -3,16 +3,26 @@ import pandas as pd
 import pickle
 import requests
 
-page_bg_img = '''
-<style>
-body {
-background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
-background-size: cover;
-}
-</style>
-'''
 
-st.markdown(page_bg_img, unsafe_allow_html=True)
+def set_bg_hack_url():
+    '''
+    A function to unpack an image from url and set as bg.
+    Returns
+    -------
+    The background.
+    '''
+
+    st.markdown(
+        f"""
+         <style>
+         .stApp {{
+             background: url("https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+             background-size: cover
+         }}
+         </style>
+         """,
+        unsafe_allow_html=True
+    )
 
 def fetch_poster(movie_id):
     response = requests.get(
@@ -45,7 +55,7 @@ movies_dict = pickle.load(open('movies_dict.pkl', 'rb'))
 movies = pd.DataFrame(movies_dict)
 similarity = pickle.load(open('similarity.pkl', 'rb'))
 
-st.title('Movie Recommender System')
+st.title('Movie Recommender Buddy')
 
 selected_movie_name = st.selectbox(
     "Which movie have you watched?",
