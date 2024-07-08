@@ -3,40 +3,32 @@ import pandas as pd
 import pickle
 import requests
 
+import base64
 
-st.set_page_config(layout="wide")
 
-video_html = """
-		<style>
+@st.cache(allow_output_mutation=True)
+def get_base64_of_bin_file(bin_file):
+    with open(bin_file, 'rb') as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
 
-		#myVideo {
-		  position: fixed;
-		  right: 0;
-		  bottom: 0;
-		  min-width: 100%; 
-		  min-height: 100%;
-		}
 
-		.content {
-		  position: fixed;
-		  bottom: 0;
-		  background: rgba(0, 0, 0, 0.5);
-		  color: #f1f1f1;
-		  width: 100%;
-		  padding: 20px;
-		}
+def set_png_as_page_bg(png_file):
+    bin_str = get_base64_of_bin_file(png_file)
+    page_bg_img = '''
+    <style>
+    body {
+    background-image: url("data:image/png;base64,%s");
+    background-size: cover;
+    }
+    </style>
+    ''' % bin_str
 
-		</style>	
-		<video autoplay muted loop id="myVideo">
-		  <source src="https://drive.google.com/file/d/1H6xQKGvIThy-7LLjC2Ipal9_wF_Z4biu/view?usp=drive_link">
-		  Your browser does not support HTML5 video.
-		</video>
-        """
+    st.markdown(page_bg_img, unsafe_allow_html=True)
+    return
 
-st.markdown(video_html, unsafe_allow_html=True)
-st.title('Video page')
 
-st.markdown("This text is written on top of the background video! 😁")
+set_png_as_page_bg('jeremy-yap-J39X2xX_8CQ-unsplash.jpg')
 
 def fetch_poster(movie_id):
     response = requests.get(
