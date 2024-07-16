@@ -4,25 +4,6 @@ import pickle
 import requests
 
 
-def set_bg_hack_url():
-    '''
-    A function to unpack an image from url and set as bg.
-    Returns
-    -------
-    The background.
-    '''
-
-    st.markdown(
-        f"""
-         <style>
-         .stApp {{
-             background: url("https://cdn.pixabay.com/photo/2020/06/19/22/33/wormhole-5319067_960_720.jpg");
-             background-size: cover
-         }}
-         </style>
-         """,
-        unsafe_allow_html=True
-    )
 
 def fetch_poster(movie_id):
     response = requests.get(
@@ -68,21 +49,26 @@ if st.button("Recommend"):
     col1, col2, col3, col4, col5 = st.columns(5)
     with col1:
         st.text(recommendations[0])
-        st.image(posters[0])
+        st.markdown(f'<a href="https://www.google.com/search?q={recommendations[0]}+movie"><img src="{posters[0]}" width="100"></a>',unsafe_allow_html=True)
 
     with col2:
         st.text(recommendations[1])
-        st.image(posters[1])
+        st.markdown(f'<a href="https://www.google.com/search?q={recommendations[1]}+movie"><img src="{posters[1]}" width="100"></a>',unsafe_allow_html=True)
 
     with col3:
         st.text(recommendations[2])
-        st.image(posters[2])
+        st.markdown(f'<a href="https://www.google.com/search?q={recommendations[2]}+movie"><img src="{posters[2]}" width="100"></a>',unsafe_allow_html=True)
 
     with col4:
         st.text(recommendations[3])
-        st.image(posters[3])
+        st.markdown(f'<a href="https://www.google.com/search?q={recommendations[3]}+movie"><img src="{posters[3]}" width="100"></a>',unsafe_allow_html=True)
 
     with col5:
         st.text(recommendations[4])
-        st.image(posters[4])
+        st.markdown(f'<a href="https://www.google.com/search?q={recommendations[4]}+movie"><img src="{posters[4]}" width="100"></a>',unsafe_allow_html=True)
+    # for i in range(5):
+    #     col = st.columns(5)[i]
+    #     with col:
+    #         st.text(recommendations[i])
+    #         st.markdown(f'<a href="https://www.google.com/search?q={recommendations[i]}"><img src="{posters[i]}" width="100"></a>',unsafe_allow_html=True)
 

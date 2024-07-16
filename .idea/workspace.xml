@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="719896c3-0f28-4775-b3f9-af4c36d1ce81" name="Changes" comment="Changing Background Image method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,18 +22,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "abhishekmeena33"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;abhishekmeena33&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/abhishekmeena33/movies-recommender-system.git",
-    "accountId": "d2c46778-573d-4ca2-abde-88f2113d2ad0"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/abhishekmeena33/movies-recommender-system.git&quot;,
+    &quot;accountId&quot;: &quot;d2c46778-573d-4ca2-abde-88f2113d2ad0&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -84,7 +83,8 @@
       <updated>1720403791361</updated>
       <workItem from="1720403796400" duration="282000" />
       <workItem from="1720406198571" duration="9315000" />
-      <workItem from="1720463896711" duration="3396000" />
+      <workItem from="1720463896711" duration="4938000" />
+      <workItem from="1720697526134" duration="102000" />
     </task>
     <task id="LOCAL-00001" summary="Added Video as a Background">
       <option name="closed" value="true" />
@@ -110,7 +110,23 @@
       <option name="project" value="LOCAL" />
       <updated>1720467135054</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changing Background Image method">
+      <option name="closed" value="true" />
+      <created>1720467585922</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720467585922</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Changing Background Image method">
+      <option name="closed" value="true" />
+      <created>1720467765402</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720467765402</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
