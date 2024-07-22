@@ -43,7 +43,7 @@ selected_movie_name = st.selectbox(
     movies['title'].values)
 
 #st.button("Reset", type="primary")
-if st.button("Recommend"):
+if st.button("Recommend") or st.text_input:
     recommendations, posters = recommend_movies(selected_movie_name)
 
     col1, col2, col3, col4, col5 = st.columns(5)
@@ -71,4 +71,3 @@ if st.button("Recommend"):
     #     with col:
     #         st.text(recommendations[i])
     #         st.markdown(f'<a href="https://www.google.com/search?q={recommendations[i]}"><img src="{posters[i]}" width="100"></a>',unsafe_allow_html=True)
-
