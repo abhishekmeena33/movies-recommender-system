@@ -36,6 +36,21 @@ movies_dict = pickle.load(open('movies_dict.pkl', 'rb'))
 movies = pd.DataFrame(movies_dict)
 similarity = pickle.load(open('similarity.pkl', 'rb'))
 
+#Background-Image with css
+
+background_image = """
+<style>
+[data-testid="stAppViewContainer"] > .main {
+    background-image: url("https://www.pixel4k.com/wp-content/uploads/2019/03/colorful-blur-4k_1551645486.jpg.webp");
+    background-size: 100vw 100vh;  # This sets the size to cover 100% of the viewport width and height
+    background-position: center;  
+    background-repeat: no-repeat;
+}
+</style>
+"""
+
+st.markdown(background_image, unsafe_allow_html=True)
+
 st.title('Movie Recommender Buddy')
 
 selected_movie_name = st.selectbox(
