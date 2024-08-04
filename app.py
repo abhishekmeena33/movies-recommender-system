@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 import requests
-from streamlit_lottie import st_lottie
+# from streamlit_lottie import st_lottie
 
 # Function to fetch poster and movie details
 def fetch_movie_details(movie_id):

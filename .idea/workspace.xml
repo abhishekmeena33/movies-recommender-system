@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="719896c3-0f28-4775-b3f9-af4c36d1ce81" name="Changes" comment="Changing Background Image method">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-    </list>
+    <list default="true" id="719896c3-0f28-4775-b3f9-af4c36d1ce81" name="Changes" comment="Changing Background Image method" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +87,7 @@
       <workItem from="1721656408680" duration="931000" />
       <workItem from="1722422747010" duration="79000" />
       <workItem from="1722625733369" duration="6074000" />
-      <workItem from="1722784999134" duration="9182000" />
+      <workItem from="1722784999134" duration="9502000" />
     </task>
     <task id="LOCAL-00001" summary="Added Video as a Background">
       <option name="closed" value="true" />
