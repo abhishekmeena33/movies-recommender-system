@@ -16,10 +16,10 @@ Welcome to the Movie Recommender System project! This project uses the TMDB 5000
 - [License](#license)
 
 ## Overview
-This project aims to provide movie recommendations based on content similarity. The model processes the TMDB 5000 Movies Dataset and uses natural language processing and machine learning techniques to suggest movies that are similar to a user-selected movie.
+This project aims to provide movie recommendations based on content similarity. The model processes the TMDB 5000 Movies Dataset and uses natural language processing and machine learning techniques to suggest movies similar to a user-selected movie.
 
 ## Dataset
-The data used for this project is the TMDB 5000 Movies Dataset available on Kaggle. The dataset includes metadata about movies, such as genres, keywords, cast, crew, and more.
+The data used for this project is the TMDB 5000 Movies Dataset available on Kaggle. The dataset includes movie metadata, such as genres, keywords, cast, crew, etc.
 
 - [TMDB 5000 Movies Dataset on Kaggle](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata/code)
 
@@ -37,7 +37,7 @@ The following libraries are used in this project:
 The recommendation model is based on content similarity. Here are the key steps involved:
 
 1. **Data Preprocessing**: Cleaning and preparing the dataset.
-2. **Feature Extraction**: Using CountVectorizer to convert text data into feature vectors.
+2. **Feature Extraction**: Using CountVectorizer/TfidfVectorizer to convert text data into feature vectors.
 3. **Similarity Calculation**: Calculating cosine similarity between movies.
 4. **Recommendation**: Suggesting movies based on similarity scores.
 5. **Model Serialization**: Using Pickle to save the trained model for future use.
@@ -68,8 +68,9 @@ streamlit run app.py
 This will start the Streamlit server, and you can access the web application in your browser.
 
 ## Screenshots
-![image](https://github.com/abhishekmeena33/movies-recommender-system/assets/118628637/cae17418-5479-4830-80b0-9be088461c24)
-![image](https://github.com/abhishekmeena33/movies-recommender-system/assets/118628637/6a8ee307-9508-48b1-a645-8685c8669c93)
+![image](https://github.com/user-attachments/assets/f827129c-4684-4209-8c9a-bada6923a184)
+
+![image](https://github.com/user-attachments/assets/6957ea5b-0c4e-4a87-ade9-3692a3d03625)
 
 
 ## Deployment
@@ -77,7 +78,7 @@ The web application is deployed using Streamlit. You can access the live applica
 
 - [Movie Recommender System](https://movie-recommender-buddy.streamlit.app/)
 
-To deploy your own version, follow these steps:
+To deploy your version, follow these steps:
 
 1. Push your code to a GitHub repository.
 2. Connect your repository to Streamlit Cloud and deploy the app.
