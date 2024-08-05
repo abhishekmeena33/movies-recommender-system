@@ -26,7 +26,7 @@ The data used for this project is the TMDB 5000 Movies Dataset available on Kagg
 ## Libraries Used
 The following libraries are used in this project:
 
-- [Scikit-learn](https://scikit-learn.org/stable/): For CountVectorizer and cosine similarity calculations.
+- [Scikit-learn](https://scikit-learn.org/stable/): For CountVectorizer, TfidfVectorizer(current) and cosine similarity calculations.
 - [Pandas](https://pandas.pydata.org/): For data manipulation and analysis.
 - [Numpy](https://numpy.org/): For numerical operations.
 - [NLTK](https://www.nltk.org/): For natural language processing (PorterStemmer).
